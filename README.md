@@ -13,9 +13,9 @@
 #### dropping missing values:
 - [] dropna()
 
-### Iterating over :
+### Iterating over
 - [] rows
 - [] columns
 
-### Iterations over columns:
+
 
