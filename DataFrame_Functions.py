@@ -27,3 +27,19 @@ print(Reliefe_Funds_df.dtypes, "\n")
 print('dataframe info:')
 print(Reliefe_Funds_df, "\n")
 
+print('Is the dataframe empty ?')
+print(Reliefe_Funds_df.empty , "\n")
+
+print('Print the first five rows of the dataframe:')
+print(Reliefe_Funds_df.head(), "\n")
+
+
+print('create new dataframes as  subsets of the initial dataframe:')
+print("-- dataframe Reliefe_Funds_df_5 : ")
+Reliefe_Funds_df_5 = Reliefe_Funds_df.head()
+print(Reliefe_Funds_df_5, "\n")
+
+print("-- dataframe Reliefe_Funds_df_12 :")
+Reliefe_Funds_df_12 = Reliefe_Funds_df.head(12)
+print(Reliefe_Funds_df_12)
+
