@@ -14,6 +14,18 @@ print("Read csv file", "\n")
 Reliefe_Funds_df = pd.read_csv('E:\_Python_Projects_Data\Provider_Relief_Fund\Funds.csv')
 print(Reliefe_Funds_df.head(), "\n")
 
+# Missing data functions: isna(), isnull(), notna(), notnull()
+
+print("Missing data functions:")
+print('-----------------------')
+print(pd.isna(Reliefe_Funds_df), "\n")
+
+print(pd.isnull(Reliefe_Funds_df), "\n")
+print(pd.notna(Reliefe_Funds_df), "\n")
+print(pd.notnull(Reliefe_Funds_df), "\n")
+
+
+'''
 print('dataframe index:')
 print(Reliefe_Funds_df.index , "\n")
 
@@ -43,3 +55,7 @@ print("-- dataframe Reliefe_Funds_df_12 :")
 Reliefe_Funds_df_12 = Reliefe_Funds_df.head(12)
 print(Reliefe_Funds_df_12)
 
+print("-- dataframe Reliefe_funds_17_end :")
+Reliefe_Funds_df_17_end = Reliefe_Funds_df.tail(17)
+print(Reliefe_Funds_df_17_end)
+'''
