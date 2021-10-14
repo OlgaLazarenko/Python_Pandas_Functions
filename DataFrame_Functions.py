@@ -19,10 +19,21 @@ print(Reliefe_Funds_df.head(), "\n")
 print("Missing data functions:")
 print('-----------------------')
 print(pd.isna(Reliefe_Funds_df), "\n")
+print(pd.notna(Reliefe_Funds_df), "\n")
 
 print(pd.isnull(Reliefe_Funds_df), "\n")
-print(pd.notna(Reliefe_Funds_df), "\n")
 print(pd.notnull(Reliefe_Funds_df), "\n")
+
+
+# Count the rows in the dataframe
+print(Reliefe_Funds_df.index, "\n")
+print('Number of rows in the dataframe:')
+print(len(Reliefe_Funds_df))
+
+small_df = Reliefe_Funds_df.head()
+print(small_df, "\n")
+print('number of rows in small_df :')
+print(len(small_df.index))
 
 
 '''
