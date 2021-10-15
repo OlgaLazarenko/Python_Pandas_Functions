@@ -28,7 +28,27 @@ print(pd.notnull(Reliefe_Funds_df), "\n")
 # Count the rows in the dataframe
 print(Reliefe_Funds_df.index, "\n")
 print('Number of rows in the dataframe:')
-print(len(Reliefe_Funds_df))
+print(len(Reliefe_Funds_df), "\n")
+
+print('-------------------------------')
+print('Delete rows with missing values:')
+# Delete rows with zero values, first replace the zero values with NaN
+Reliefe_Funds_df['Provider Relief Fund'] = Reliefe_Funds_df['Provider Relief Fund'].replace(0,np.nan)
+Reliefe_Funds_df['AAP'] = Reliefe_Funds_df['AAP'].replace(0,np.nan)
+
+# now we can drop all NaN values from the dataframe
+Reliefe_Funds_df.dropna(subset = ['Provider Relief Fund', 'AAP'], inplace = True)
+
+print(Reliefe_Funds_df, "\n")
+
+# Rename the columns
+Reliefe_Funds_df.rename(columns = {"Provider Relief Fund":"Relief_Fund" , 
+                                    "Provider Name":"Provider" ,
+                                   "State / Territory":"State"} , inplace = True)
+print('new columns:')
+print(Reliefe_Funds_df.columns , "\n")
+
+
 
 small_df = Reliefe_Funds_df.head()
 print(small_df, "\n")
