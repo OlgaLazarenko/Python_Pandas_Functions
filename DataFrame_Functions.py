@@ -62,9 +62,16 @@ small_df_A = small_df.drop(columns = ['Relief_Fund','AAP'])
 print('small-df_A', "\n")
 print(small_df_A , "\n")
 
-small_df_B = small_df.drop(columns = ['Provider','State'])
+small_df_B = small_df.drop(columns = ['State'])
 print('small_df_B', "\n")
-print(small_df_B)
+print(small_df_B , "\n")
+print('~~~~~~~~~~~~~~~~~~~~~~~~~~~' , "\n")
+# join the DataFrames <small_df_A> and <small_df_B> on index
+print('Join twe DataFrames, the output:')
+join_df = pd.merge(small_df_A , small_df_B , how = 'left' , on = 'Provider')
+print(join_df)
+
+
 
 '''
 print('dataframe index:')
