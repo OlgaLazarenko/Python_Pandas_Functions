@@ -47,14 +47,24 @@ Reliefe_Funds_df.rename(columns = {"Provider Relief Fund":"Relief_Fund" ,
                                    "State / Territory":"State"} , inplace = True)
 print('new columns:')
 print(Reliefe_Funds_df.columns , "\n")
+print(Reliefe_Funds_df.head(20) , "\n")
+print('-----------------------------')
 
 
 
-small_df = Reliefe_Funds_df.head()
+small_df = Reliefe_Funds_df.head(10)
 print(small_df, "\n")
 print('number of rows in small_df :')
-print(len(small_df.index))
+print(len(small_df.index), "\n")
 
+# delete columns in DataFrame
+small_df_A = small_df.drop(columns = ['Relief_Fund','AAP'])
+print('small-df_A', "\n")
+print(small_df_A , "\n")
+
+small_df_B = small_df.drop(columns = ['Provider','State'])
+print('small_df_B', "\n")
+print(small_df_B)
 
 '''
 print('dataframe index:')
