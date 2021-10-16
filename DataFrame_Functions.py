@@ -52,28 +52,28 @@ print('-----------------------------')
 
 
 
-small_df = Reliefe_Funds_df.head(10)
+small_df = Reliefe_Funds_df.head(11)
 print(small_df, "\n")
 print('number of rows in small_df :')
 print(len(small_df.index), "\n")
 
 # insert a new column 'ID'
-small_df.insert(1, "ID" , [10001,10002,10003,10004,10005,
-                            10006,10007,10008,10009,10010])
+small_df.insert(0, "ID" , [10001,10002,10003,10004,10005,
+                            10006,10007,10008,10009,10010,10011])
 
 
 # delete columns in DataFrame
-small_df_A = small_df.drop(columns = ['Relief_Fund','AAP'])
+small_df_A = small_df.drop(columns = ['Relief_Fund','State','AAP'])
 print('small-df_A', "\n")
 print(small_df_A , "\n")
 
-small_df_B = small_df.drop(columns = ['State'])
+small_df_B = small_df.drop(columns = ['Provider','State','AAP'])
 print('small_df_B', "\n")
 print(small_df_B , "\n")
 print('~~~~~~~~~~~~~~~~~~~~~~~~~~~' , "\n")
 # join the DataFrames <small_df_A> and <small_df_B> on index
 print('Join twe DataFrames, the output:')
-join_df = pd.merge(small_df_A , small_df_B , how = 'left' , on = 'Provider')
+join_df = pd.merge(small_df_A , small_df_B , how = 'left' , on = 'ID')
 print(join_df)
 
 
