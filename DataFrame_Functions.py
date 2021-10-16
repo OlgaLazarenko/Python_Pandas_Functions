@@ -57,6 +57,11 @@ print(small_df, "\n")
 print('number of rows in small_df :')
 print(len(small_df.index), "\n")
 
+# insert a new column 'ID'
+small_df.insert(1, "ID" , [10001,10002,10003,10004,10005,
+                            10006,10007,10008,10009,10010])
+
+
 # delete columns in DataFrame
 small_df_A = small_df.drop(columns = ['Relief_Fund','AAP'])
 print('small-df_A', "\n")
