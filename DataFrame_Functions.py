@@ -60,6 +60,8 @@ print(len(small_df.index), "\n")
 # insert a new column 'ID'
 small_df.insert(0, "ID" , [10001,10002,10003,10004,10005,
                             10006,10007,10008,10009,10010,10011])
+print('small_df:')
+print(small_df , "\n")
 
 
 # delete columns in DataFrame
@@ -70,11 +72,32 @@ print(small_df_A , "\n")
 small_df_B = small_df.drop(columns = ['Provider','State','AAP'])
 print('small_df_B', "\n")
 print(small_df_B , "\n")
+
+# delete rows in DataFrame
+small_df_C = small_df_A.drop( labels = [4,5,7,18,25,41] , axis = 0)
+print("small_df_C :")
+print(small_df_C, "\n")
+
+small_df_D = small_df_B.drop( labels = [25,41,43] , axis = 0)
+print("small_df_D :")
+print(small_df_D , "\n")
+
+
 print('~~~~~~~~~~~~~~~~~~~~~~~~~~~' , "\n")
 # join the DataFrames <small_df_A> and <small_df_B> on index
 print('Join twe DataFrames, the output:')
 join_df = pd.merge(small_df_A , small_df_B , how = 'left' , on = 'ID')
-print(join_df)
+print(join_df , "\n")
+
+# left join the DataFrames <small_df_C> and <small_df_B> on index
+print('Left join on the DataFrames:')
+join_df_left = pd.merge(small_df_C, small_df_B , how = 'left', on = 'ID')
+print(join_df_left, "\n")
+
+# right join the DataFrames <small_df_C> and <small_df_D>
+print('Right join on the DataFrames: ')
+join_df_right = pd.merge(small_df_C , small_df_A, how = 'right' , on = 'ID')
+print(join_df_right , "\n")
 
 
 
