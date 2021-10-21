@@ -96,8 +96,17 @@ print(join_df_left, "\n")
 
 # right join the DataFrames <small_df_C> and <small_df_D>
 print('Right join on the DataFrames: ')
-join_df_right = pd.merge(small_df_C , small_df_A, how = 'right' , on = 'ID')
+join_df_right = pd.merge(small_df_A, small_df_C, how = 'right' , on = 'ID')
 print(join_df_right , "\n")
+print('-----------------------------------------------------------------------')
+# insert a new column
+print('small_df :') 
+print(small_df, "\n")
+print('Insert a new column:')
+print(small_df.insert(1 , 'Type', 
+                                ['A','A','B','C','D',
+                                'A','C','D','B','F',
+                                'C']))
 
 
 
