@@ -103,11 +103,11 @@ print('-----------------------------------------------------------------------')
 print('small_df :') 
 print(small_df, "\n")
 print('Insert a new column:')
-print(small_df.insert(1 , 'Type', 
-                                ['A','A','B','C','D',
-                                'A','C','D','B','F',
-                                'C']))
-
+small_df.insert(0 , "Type", 
+                                [1,1,1,1,1,
+                                1,1,1,1,1,
+                                1], allow_duplicates = True)
+print(small_df)
 
 
 '''
