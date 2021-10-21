@@ -63,8 +63,28 @@ small_df.insert(0, "ID" , [10001,10002,10003,10004,10005,
 print('small_df:')
 print(small_df , "\n")
 
+# insert a new column
+print('small_df :') 
+print(small_df, "\n")
+print('Insert a new column:')
+small_df.insert(0 , "Type", 
+                                [1,1,1,1,1,
+                                1,1,1,1,1,
+                                1], allow_duplicates = True)
+print(small_df , "\n")
+print('Insert one more column:')
+new_column = ['a','a','b','c','d','a','c','d','b','a','a']
+small_df.insert( 3 , "New Type", new_column, allow_duplicates = True )
+print(small_df , "\n")
 
-# delete columns in DataFrame
+# delete columns to have the initial <small_df>  DataFrame:
+print('Delete columns from DataFrame:') 
+small_df.drop("New Type" , axis = 1 , inplace = True)
+small_df.drop('Type', axis = 1, inplace = True)
+print(small_df)
+
+
+# delete columns in DataFrame to create subsets of DataFrame to be used for joins
 small_df_A = small_df.drop(columns = ['Relief_Fund','State','AAP'])
 print('small-df_A', "\n")
 print(small_df_A , "\n")
@@ -99,15 +119,9 @@ print('Right join on the DataFrames: ')
 join_df_right = pd.merge(small_df_A, small_df_C, how = 'right' , on = 'ID')
 print(join_df_right , "\n")
 print('-----------------------------------------------------------------------')
-# insert a new column
-print('small_df :') 
-print(small_df, "\n")
-print('Insert a new column:')
-small_df.insert(0 , "Type", 
-                                [1,1,1,1,1,
-                                1,1,1,1,1,
-                                1], allow_duplicates = True)
-print(small_df)
+
+
+
 
 
 '''
