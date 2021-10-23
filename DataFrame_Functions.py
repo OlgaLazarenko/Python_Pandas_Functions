@@ -125,7 +125,7 @@ print("Arithmetic Functions:")
 # create a DataFrame for arithmetic functions
 shape_df = pd.DataFrame(
     {'Height': [10,20,30,40,50]  , 
-     'Width':[ 18,16,10,184,2] , 
+     'Width':[ 18,16,10,18,12] , 
      'Depth' : [6,4,2,8,8] ,
      'Radius' : [10,16,12,14,10] , 
       'Angle' : [90,180,120,100,60]
@@ -179,6 +179,16 @@ print(shape_df.pow(1/2) , "\n")
 
 print(shape_df.pow(3) , "\n")
 print(shape_df.pow(1/3) , "\n")
+
+# arithmetic functions on one column of DataFrame
+print("Arithmetic functions on one column of DataFrame:")
+print(shape_df['Height'].add(10) , "\n")
+print(shape_df['Height'].sub(20) , "\n")
+print(shape_df['Width'].mul(2), "\n")
+
+# Arithmetic functions on DataFrame are completed ***
+print('---------------------------------------------')
+
 
 
 
