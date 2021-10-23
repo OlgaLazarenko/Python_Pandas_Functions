@@ -26,14 +26,14 @@
 - [] drop()
 
 ### arithmetic functions
-- [] add()
-- [] sub()
-- [] mul()
-- [] div() , float division
-- [] truediv() , float division
-- [] foordiv() , integer division
-- [] mod() , reminder after division
-- [] pow() , exponential 
+- [x] add()
+- [x] sub()
+- [x] mul()
+- [x] div() , float division
+- [x] truediv() , float division
+- [x] foordiv() , integer division
+- [x] mod() , reminder after division
+- [x] pow() , exponential 
 
 
 
