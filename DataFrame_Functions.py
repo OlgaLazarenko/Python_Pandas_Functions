@@ -121,9 +121,10 @@ print(join_df_right , "\n")
 print('-----------------------------------------------------------------------')
 
 # Arithmetic Functions
+print("Arithmetic Functions:")
 # create a DataFrame for arithmetic functions
 shape_df = pd.DataFrame(
-    {'Height': [10,20,12,18,22]  , 
+    {'Height': [10,20,30,40,50]  , 
      'Width':[ 18,16,10,184,2] , 
      'Depth' : [6,4,2,8,8] ,
      'Radius' : [10,16,12,14,10] , 
@@ -131,8 +132,55 @@ shape_df = pd.DataFrame(
     } , 
     index = ['index_0','index_1','index_2','index_3','index_4']
 )
-print("shape_df :")
-print(shape_df)
+print("shape_df  DataFrame:")
+print(shape_df , "\n")
+# add operation
+print('1.Add operation: ')
+shape_df_add =shape_df+2
+print(shape_df_add , "\n")
+# or
+print("or")
+print(shape_df_add + 8 , "\n")
+# or
+print('or')
+print(shape_df.add(4) , "\n")
+
+# substract operation
+print('2.Substract operation:')
+print(shape_df.sub(4) , "\n" ) 
+print(shape_df.sub(50) , "\n") # the initial DataFrame <shape_df> is not changed
+
+# multiplication
+print("3.Multiplication:")
+print(shape_df.mul(2) , "\n")
+print(shape_df.mul(0.1) , "\n") # notice, the initial DataFrame <shape_df> is not changed
+
+# division
+print("4.Division (float and integer):")
+print(shape_df.div(2) , "\n")
+print(shape_df.div(3) , "\n")
+
+print(shape_df.truediv(5), "\n")
+print(shape_df.truediv(3) , "\n")
+
+print(shape_df.floordiv(3) , "\n")
+print(shape_df.floordiv(4) , "\n")
+
+# reminder after divisiion/mod
+print("5.Reminder after divistion/mod :")
+print(shape_df.mod(4), "\n")
+print(shape_df.mod(10) , "\n")
+print(shape_df.mod(3) , "\n")
+
+# exponential
+print("6.Exponential:")
+print(shape_df.pow(2) , "\n")
+print(shape_df.pow(1/2) , "\n")
+
+print(shape_df.pow(3) , "\n")
+print(shape_df.pow(1/3) , "\n")
+
+
 
 
 
