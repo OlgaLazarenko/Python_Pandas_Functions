@@ -25,7 +25,7 @@
 - [] insert()
 - [] drop()
 
-### arithmetical functions
+### arithmetic functions
 - [] add()
 - [] sub()
 - [] mul()
@@ -33,7 +33,7 @@
 - [] truediv() , float division
 - [] foordiv() , integer division
 - [] mod() , reminder after division
-- [] pow() , exponential +
+- [] pow() , exponential 
 
 
 

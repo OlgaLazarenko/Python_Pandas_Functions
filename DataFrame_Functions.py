@@ -120,7 +120,19 @@ join_df_right = pd.merge(small_df_A, small_df_C, how = 'right' , on = 'ID')
 print(join_df_right , "\n")
 print('-----------------------------------------------------------------------')
 
-
+# Arithmetic Functions
+# create a DataFrame for arithmetic functions
+shape_df = pd.DataFrame(
+    {'Height': [10,20,12,18,22]  , 
+     'Width':[ 18,16,10,184,2] , 
+     'Depth' : [6,4,2,8,8] ,
+     'Radius' : [10,16,12,14,10] , 
+      'Angle' : [90,180,120,100,60]
+    } , 
+    index = ['index_0','index_1','index_2','index_3','index_4']
+)
+print("shape_df :")
+print(shape_df)
 
 
 
