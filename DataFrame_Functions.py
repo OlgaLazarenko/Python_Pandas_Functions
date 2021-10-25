@@ -188,7 +188,11 @@ print(shape_df['Width'].mul(2), "\n")
 
 # Arithmetic functions on DataFrame are completed ***
 print('---------------------------------------------')
+print('the initial <shape_df>  DataFrame:')
+print(shape_df , "\n")
 
+# lookup() function
+print(shape_df.lookup('Height','index_0')) # ????? Not working. Why ???
 
 
 
