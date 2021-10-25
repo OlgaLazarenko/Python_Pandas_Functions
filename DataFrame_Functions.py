@@ -192,7 +192,23 @@ print('the initial <shape_df>  DataFrame:')
 print(shape_df , "\n")
 
 # lookup() function
-print(shape_df.lookup('Height','index_0')) # ????? Not working. Why ???
+# print(shape_df.lookup('Height','index_0')) # ????? Not working. Why ???
+print('----------------------------------------------' , "\n")
+# aggregate function
+print("Aggregate Function:")
+print('1.Sum')
+print(shape_df.agg([sum]) , "\n")
+print('or')
+print(shape_df.agg(sum) , "\n")
+
+print('2.Min/Max')
+print(shape_df.agg(['min','max']), "\n")
+
+print(shape_df.agg(['min','max','mean']) , "\n")
+
+print('different aggregations for the columns:')
+print(shape_df.agg({'Height': ['min'] , 'Width':['max'] , 'Angle':['mean']}) )
+
 
 
 
