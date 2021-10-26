@@ -215,8 +215,12 @@ print("Data Types Function:" , "\n")
 print('1. dtypes() function:')
 print(shape_df.dtypes, "\n")
 print(Reliefe_Funds_df.dtypes, "\n")
-print('cast the column <Relief_Fund> to int32:')
-print(Reliefe_Funds_df.astype({'Relief_Fund':'int32'}).dtypes)
+print('- Cast the column <Relief_Fund> to int32 data type :')
+print(Reliefe_Funds_df.astype({'Relief_Fund':'int32'}).dtypes , "\n")
+
+print('_ Cast the column <AAP> to int64 data type')
+print(Reliefe_Funds_df.astype({'AAP':'int64'}).dtypes , "\n")
+
 
 
 
