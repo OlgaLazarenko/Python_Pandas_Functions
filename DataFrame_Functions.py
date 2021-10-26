@@ -208,8 +208,15 @@ print(shape_df.agg(['min','max','mean']) , "\n")
 
 print('different aggregations for the columns:')
 print(shape_df.agg({'Height': ['min'] , 'Width':['max'] , 'Angle':['mean']}) )
+print('----------------------------------------------------', "\n")
 
-
+# data types functions
+print("Data Types Function:" , "\n")
+print('1. dtypes() function:')
+print(shape_df.dtypes, "\n")
+print(Reliefe_Funds_df.dtypes, "\n")
+print('cast the column <Relief_Fund> to int32:')
+print(Reliefe_Funds_df.astype({'Relief_Fund':'int32'}).dtypes)
 
 
 
