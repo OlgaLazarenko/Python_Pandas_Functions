@@ -35,6 +35,10 @@
 - [x] mod() , reminder after division
 - [x] pow() , exponential 
 
+### data types functions
+- [] dtypes()
+- [] astype()
+- [] convert_dtypes()
 
 
 
