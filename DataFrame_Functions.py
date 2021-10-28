@@ -24,7 +24,20 @@ print(pd.notna(Reliefe_Funds_df), "\n")
 print(pd.isnull(Reliefe_Funds_df), "\n")
 print(pd.notnull(Reliefe_Funds_df), "\n")
 
+# Information about the DataFrame
+print('*** Information about <Reliefe_Fund_df>  DataFrame:' ,"\n")
+print('dataframe data types:')
+print(Reliefe_Funds_df.dtypes, "\n")
 
+print('dataframe info:')
+print(Reliefe_Funds_df, "\n")
+
+print('Is the dataframe empty ?')
+print(Reliefe_Funds_df.empty , "\n")
+
+print('Print the first five rows of the dataframe:')
+print(Reliefe_Funds_df.head(), "\n")
+print('---------------------------------')
 # Count the rows in the dataframe
 print(Reliefe_Funds_df.index, "\n")
 print('Number of rows in the dataframe:')
@@ -243,17 +256,7 @@ print(Reliefe_Funds_df.astype({'AAP':'int64'}).dtypes , "\n")
 
 
 
-print('dataframe data types:')
-print(Reliefe_Funds_df.dtypes, "\n")
 
-print('dataframe info:')
-print(Reliefe_Funds_df, "\n")
-
-print('Is the dataframe empty ?')
-print(Reliefe_Funds_df.empty , "\n")
-
-print('Print the first five rows of the dataframe:')
-print(Reliefe_Funds_df.head(), "\n")
 
 
 
