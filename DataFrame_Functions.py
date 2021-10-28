@@ -118,6 +118,21 @@ print(join_df_left, "\n")
 print('Right join on the DataFrames: ')
 join_df_right = pd.merge(small_df_A, small_df_C, how = 'right' , on = 'ID')
 print(join_df_right , "\n")
+print('----------------------------------------------------------------------')
+
+# Create DataFrame subsets
+print('Create new DataFrames as  subsets of the initial <Reliefe_Funds_ds:')
+print("-- dataframe Reliefe_Funds_df_5 : ")
+Reliefe_Funds_df_5 = Reliefe_Funds_df.head()
+print(Reliefe_Funds_df_5, "\n")
+
+print("-- dataframe Reliefe_Funds_df_12 :")
+Reliefe_Funds_df_12 = Reliefe_Funds_df.head(12)
+print(Reliefe_Funds_df_12 , "\n")
+
+print("-- dataframe Reliefe_funds_17_end :")
+Reliefe_Funds_df_17_end = Reliefe_Funds_df.tail(17)
+print(Reliefe_Funds_df_17_end)
 print('-----------------------------------------------------------------------')
 
 # Arithmetic Functions
@@ -225,13 +240,8 @@ print(Reliefe_Funds_df.astype({'AAP':'int64'}).dtypes , "\n")
 
 
 
-'''
-print('dataframe index:')
-print(Reliefe_Funds_df.index , "\n")
 
-# set the index stars from 100 with the step=1
-print('dataframe columns:')
-print(Reliefe_Funds_df.columns , "\n")
+
 
 print('dataframe data types:')
 print(Reliefe_Funds_df.dtypes, "\n")
@@ -246,16 +256,5 @@ print('Print the first five rows of the dataframe:')
 print(Reliefe_Funds_df.head(), "\n")
 
 
-print('create new dataframes as  subsets of the initial dataframe:')
-print("-- dataframe Reliefe_Funds_df_5 : ")
-Reliefe_Funds_df_5 = Reliefe_Funds_df.head()
-print(Reliefe_Funds_df_5, "\n")
 
-print("-- dataframe Reliefe_Funds_df_12 :")
-Reliefe_Funds_df_12 = Reliefe_Funds_df.head(12)
-print(Reliefe_Funds_df_12)
 
-print("-- dataframe Reliefe_funds_17_end :")
-Reliefe_Funds_df_17_end = Reliefe_Funds_df.tail(17)
-print(Reliefe_Funds_df_17_end)
-'''
