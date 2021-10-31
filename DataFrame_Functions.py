@@ -248,7 +248,18 @@ print(Reliefe_Funds_df.astype({'Relief_Fund':'int32'}).dtypes , "\n")
 
 print('_ Cast the column <AAP> to int64 data type')
 print(Reliefe_Funds_df.astype({'AAP':'int64'}).dtypes , "\n")
+print('-------------------------------------------------------', "\n")
 
+# Select rows/columns
+print("Select rows/columns from DataFrame:")
+print('select five first rows of DataFrame:')
+print(Reliefe_Funds_df.head, "\n")
+print('select first ten rows of DataFrame:')
+print(Reliefe_Funds_df.head(10) , "\n")
+print('select five last rows of DataFrame')
+print(Reliefe_Funds_df.tail() , "\n")
+print('select twelwe last ros of DataFrame:')
+print(Reliefe_Funds_df.tail(12) , "\n")
 
 
 
