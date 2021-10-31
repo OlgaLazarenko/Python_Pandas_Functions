@@ -40,6 +40,11 @@
 - [] astype()
 - [] convert_dtypes()
 
+### select specific rows/coumns, default/specified condition
+- [] head()
+- [] tail()
+
+
 
 
 
