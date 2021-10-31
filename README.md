@@ -41,8 +41,11 @@
 - [] convert_dtypes()
 
 ### select specific rows/coumns, default/specified condition
-- [] head()
-- [] tail()
+- [x] head()
+- [x] tail()
+- [] loc()
+- [] iloc()
+
 
 
 

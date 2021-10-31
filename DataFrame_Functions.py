@@ -254,12 +254,19 @@ print('-------------------------------------------------------', "\n")
 print("Select rows/columns from DataFrame:")
 print('select five first rows of DataFrame:')
 print(Reliefe_Funds_df.head, "\n")
+
 print('select first ten rows of DataFrame:')
 print(Reliefe_Funds_df.head(10) , "\n")
+
 print('select five last rows of DataFrame')
 print(Reliefe_Funds_df.tail() , "\n")
+
 print('select twelwe last ros of DataFrame:')
 print(Reliefe_Funds_df.tail(12) , "\n")
+
+print('select specific number of rows:')
+print(Reliefe_Funds_df.head(2, 10) , "\n")
+
 
 
 
